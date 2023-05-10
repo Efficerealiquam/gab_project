@@ -36,13 +36,15 @@ const TablePrueba = ({ data }) => {
           >
             Todo
           </th>
-          <th style={{ width: "7%" }}>Emisora</th>
-          <th style={{ width: "5%" }}>Ciudad</th>
-          <th style={{ width: "23%" }}>Advertiser</th>
-          <th style={{ width: "10%" }}>Orden</th>
-          <th style={{ width: "10%" }}>Fecha</th>
-          <th style={{ width: "10%" }}>Hora</th>
-          <th style={{ width: "30%" }}>Grabacion</th>
+          <th>Emisora</th>
+          <th>Ciudad</th>
+          <th>Advertiser</th>
+          <th>Orden</th>
+          <th>Campaña</th>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Hora Referencia</th>
+          <th>Grabacion</th>
         </tr>
       </thead>
       <tbody>
@@ -69,13 +71,15 @@ const TablePrueba = ({ data }) => {
                   </svg>
                 </label>
               </td>
-              <td style={{ width: "7%" }}>{dt["Estación"]}</td>
-              <td style={{ width: "5%" }}>{dt["Nombre del canal"]}</td>
-              <td style={{ width: "25%" }}>{dt.Advertiser}</td>
-              <td style={{ width: "10%" }}>{dt.Orden}</td>
-              <td style={{ width: "10%" }}>{dt["Fecha de emisión"]}</td>
-              <td style={{ width: "10%" }}>{dt.Hora}</td>
-              <td style={{ width: "30%" }}>{linkAudio(dt.Audio)}</td>
+              <td>{dt["Estación"]}</td>
+              <td>{dt["Nombre del canal"]}</td>
+              <td>{dt.Advertiser}</td>
+              <td>{dt.Orden}</td>
+              <td>{dt["Descripción del producto"]}</td>
+              <td>{dt["Fecha de emisión"]}</td>
+              <td>{dt.Hora}</td>
+              <td>{dt["Referencia audio"]}</td>
+              <td>{linkAudio(dt.Audio)}</td>
             </tr>
           ))}
       </tbody>
@@ -143,7 +147,7 @@ function Feed() {
       currentValue = e.target.value;
     }
   }; */
-
+  console.log(textSelect.Advertiser)
   return (
     <>
     <section className="feed border border-radius-5px">

@@ -8,7 +8,6 @@ const SelectBox = ({ data, text, setText, type }) => {
     const inputField = document.querySelector(".chosen-value");
     const dropdown = document.querySelector(".value-list");
     const dropdownArray = [...document.querySelectorAll("li")];
-    
     let valueArray = [];
     dropdownArray.forEach((item) => {
       valueArray.push(item.textContent);
@@ -73,11 +72,11 @@ const SelectBox = ({ data, text, setText, type }) => {
     });
   }, []);
   const advert = data;
+  console.log(text)
   return (
     <>
       <input
         className="chosen-value"
-        style={{borderRadius: "0.375rem",border:"1px solid #e5e7eb"}}
         type="text"
         value={text}
         onChange={(e) => setText({ ...type, type: e.target.value })}

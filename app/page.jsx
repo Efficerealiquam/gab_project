@@ -6,11 +6,11 @@ const Home = () => {
       <h1 className="head_text text_center" style={{fontSize: '2em'}}>
         {/* Discover & Share
         <br className="max-md:hidden" /> */}
-        <span className="orange_gradient text_center">Proyecto Grabaciones CRP</span>
+        <span className="orange_gradient text_center">Sistema Grabaciones CRP</span>
       </h1>
-      <p className="desc text-center">
+      {/* <p className="desc text-center">
         En este sistema podras filtrar las grabaciones segun tus necesidades y decargar todas las que selecciones.
-      </p>
+      </p> */}
       <Feed/>
     </section>
   );

@@ -141,7 +141,7 @@
 /* Tailwind Styles */
 
 .app {
-  max-width: 90rem;
+  max-width: 100rem;
   @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16 px-6;
 }
 
