@@ -205,6 +205,12 @@ function Feed() {
         >
           Buscar
         </button>
+        <button
+          type="button"
+          className="px-5 py-1.5 text-sm bg-primary-orange rounded-md p-2 text-white ml-2"
+        >
+          Descargar
+        </button>
       </form>
       <TablePrueba data={dataFilter ? dataFilter : dataTable} />
 
